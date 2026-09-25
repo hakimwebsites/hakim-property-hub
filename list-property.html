@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>List Property | Hakim Property Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav"><a class="brand" href="index.html"><span class="logo">H</span><span>Hakim <b>Property
+                        Hub</b></span></a>
+            <nav><a href="listings.html">Buy</a><a href="listings.html?mode=rent">Rent</a><a
+                    href="agents.html">Agents</a></nav>
+            <div class="nav-right"><a class="signin" href="mailto:hakimwebsites.ug@gmail.com">Contact</a></div>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container"><span class="eyebrow dark">FOR OWNERS & AGENTS</span>
+            <h1>Submit a property.</h1>
+            <p>For this demo, the form prepares an enquiry and sends it to Hakim Web Studio.</p>
+        </div>
+    </section>
+    <section class="form-section container">
+        <form id="listingForm" class="form-card">
+            <h2>Property details</h2>
+            <div class="form-grid"><label>Property title<input id="title" required
+                        placeholder="e.g. 4 bedroom home in Kololo"></label><label>Purpose<select id="purpose">
+                        <option>For sale</option>
+                        <option>For rent</option>
+                        <option>Shortlet</option>
+                    </select></label><label>Property type<select id="ptype">
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Land</option>
+                        <option>Commercial</option>
+                    </select></label><label>Location<input id="plocation" required
+                        placeholder="Kampala, Wakiso..."></label><label>Price<input id="price"
+                        placeholder="UGX"></label><label>Bedrooms<input id="pbed" type="number" min="0"
+                        placeholder="4"></label><label class="wide">Description<textarea id="desc" rows="5"
+                        placeholder="Describe the property"></textarea></label></div><button class="btn btn-green">Send
+                property enquiry</button>
+            <p class="note">This demo opens WhatsApp with the information you entered. No data is stored on the website.
+            </p>
+        </form>
+    </section>
+    <footer>
+        <div class="container copyright">Hakim Web Studio · <a href="https://wa.me/971558311047"
+                target="_blank">WhatsApp</a> · <a href="mailto:hakimwebsites.ug@gmail.com">Email</a></div>
+    </footer>
+    <script>
+        document.getElementById('listingForm').addEventListener('submit', function (e) { e.preventDefault(); const msg = `Hello Hakim Web Studio, I want to submit a property.\\n\\nTitle: ${title.value}\\nPurpose: ${purpose.value}\\nType: ${ptype.value}\\nLocation: ${plocation.value}\\nPrice: ${price.value}\\nBedrooms: ${pbed.value}\\nDescription: ${desc.value}`; location.href = 'https://wa.me/971558311047?text=' + encodeURIComponent(msg); });
+    </script>
+</body>
+
+</html>

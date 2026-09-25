@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Uganda Property Hub | Hakim Web Studio</title>
+    <meta name="description" content="A copyright-safe Uganda property portal demo by Hakim Web Studio.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html"><span class="logo">H</span><span>Hakim <b>Property Hub</b></span></a>
+            <nav><a href="listings.html">Buy</a><a href="listings.html?mode=rent">Rent</a><a
+                    href="listings.html?type=land">Land</a><a href="agents.html">Agents</a><a
+                    href="about.html">About</a></nav>
+            <div class="nav-right"><a href="mailto:hakimwebsites.ug@gmail.com" class="signin">Contact</a><a
+                    class="btn btn-green" href="list-property.html">List property</a></div>
+            <button class="menu">☰</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-copy"><span class="eyebrow">UGANDA PROPERTY MARKETPLACE DEMO</span>
+                <h1>Find property<br><em>without the noise.</em></h1>
+                <p>Homes, apartments, land and commercial spaces across Uganda — presented by Hakim Web Studio.</p>
+            </div>
+            <form class="search-box" action="listings.html">
+                <div class="tabs"><button type="button" class="active">Buy</button><button
+                        type="button">Rent</button><button type="button">Shortlet</button></div>
+                <div class="search-fields">
+                    <label>Location<select name="location">
+                            <option value="">Any location</option>
+                            <option>Kampala</option>
+                            <option>Wakiso</option>
+                            <option>Entebbe</option>
+                            <option>Jinja</option>
+                            <option>Mbarara</option>
+                            <option>Gulu</option>
+                            <option>Mukono</option>
+                            <option>Hoima</option>
+                        </select></label>
+                    <label>Property type<select name="type">
+                            <option value="">Any type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="land">Land</option>
+                            <option value="commercial">Commercial</option>
+                        </select></label>
+                    <label>Budget<select>
+                            <option>Any budget</option>
+                            <option>Under UGX 300M</option>
+                            <option>UGX 300M–600M</option>
+                            <option>UGX 600M–1B</option>
+                            <option>Over UGX 1B</option>
+                        </select></label>
+                    <button class="btn btn-green search-btn">Search</button>
+                </div><a href="listings.html" class="advanced">Advanced property search →</a>
+            </form>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <div><span class="eyebrow dark">BROWSE</span>
+                    <h2>What are you looking for?</h2>
+                </div><a href="listings.html">View all →</a>
+            </div>
+            <div class="categories">
+                <a href="listings.html?type=house"><span class="icon">⌂</span>
+                    <h3>Houses</h3>
+                    <p>Homes for sale and rent</p>
+                </a>
+                <a href="listings.html?type=apartment"><span class="icon">▦</span>
+                    <h3>Apartments</h3>
+                    <p>Flats, studios and condos</p>
+                </a>
+                <a href="listings.html?type=land"><span class="icon">⌁</span>
+                    <h3>Land & Plots</h3>
+                    <p>Residential and commercial</p>
+                </a>
+                <a href="listings.html?type=commercial"><span class="icon">▥</span>
+                    <h3>Commercial</h3>
+                    <p>Offices, shops and more</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section grey">
+        <div class="container">
+            <div class="section-title">
+                <div><span class="eyebrow dark">FEATURED DEMO LISTINGS</span>
+                    <h2>Explore properties</h2>
+                </div><a href="listings.html">Browse all →</a>
+            </div>
+            <div id="featured" class="property-grid"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <div><span class="eyebrow dark">POPULAR AREAS</span>
+                    <h2>Explore Uganda</h2>
+                </div>
+            </div>
+            <div class="locations">
+                <a class="location big" href="listings.html?location=Kampala"><strong>Kampala</strong><small>Central
+                        Uganda</small></a>
+                <a class="location" href="listings.html?location=Wakiso"><strong>Wakiso</strong><small>Central
+                        Uganda</small></a>
+                <a class="location" href="listings.html?location=Entebbe"><strong>Entebbe</strong><small>Central
+                        Uganda</small></a>
+                <a class="location" href="listings.html?location=Jinja"><strong>Jinja</strong><small>Eastern
+                        Uganda</small></a>
+                <a class="location" href="listings.html?location=Mbarara"><strong>Mbarara</strong><small>Western
+                        Uganda</small></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section why">
+        <div class="container two-col">
+            <div><span class="eyebrow dark">BUILT BY HAKIM WEB STUDIO</span>
+                <h2>A polished property experience for Uganda.</h2>
+                <p class="lead">This demo shows how a professional real-estate portal can look and behave without
+                    copying another company's brand or proprietary content.</p>
+            </div>
+            <div class="checks">
+                <div><b>✓</b><span><strong>Mobile-first</strong><small>Designed for the phones your customers actually
+                            use.</small></span></div>
+                <div><b>✓</b><span><strong>Direct enquiries</strong><small>Visitors can contact Hakim Web Studio through
+                            WhatsApp or email.</small></span></div>
+                <div><b>✓</b><span><strong>Easy to customise</strong><small>Replace demo listings with your client's
+                            real properties.</small></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container cta-inner">
+            <div><span class="eyebrow">OWN A PROPERTY BUSINESS?</span>
+                <h2>Need a website like this?</h2>
+                <p>Hakim Web Studio builds modern websites for real-estate businesses and other companies.</p>
+            </div>
+            <div class="cta-actions"><a class="btn btn-light"
+                    href="https://wa.me/971558311047?text=Hello%20Hakim%20Web%20Studio%2C%20I%27m%20interested%20in%20a%20property%20website."
+                    target="_blank">WhatsApp +971 55 831 1047</a><a class="btn btn-outline-light"
+                    href="mailto:hakimwebsites.ug@gmail.com?subject=Uganda%20Property%20Website%20Enquiry">Email us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div><a class="brand light" href="index.html"><span class="logo">H</span><span>Hakim <b>Property
+                            Hub</b></span></a>
+                <p>Uganda property portal demo by Hakim Web Studio.</p>
+            </div>
+            <div>
+                <h4>Explore</h4><a href="listings.html">Properties</a><a href="agents.html">Agents</a><a
+                    href="list-property.html">List property</a>
+            </div>
+            <div>
+                <h4>Contact</h4><a href="https://wa.me/971558311047" target="_blank">WhatsApp</a><a
+                    href="mailto:hakimwebsites.ug@gmail.com">Email</a><a href="about.html">About Hakim Web Studio</a>
+            </div>
+        </div>
+        <div class="container copyright">© 2026 Hakim Web Studio. Demo property portal. Original design and demo
+            content.</div>
+    </footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
